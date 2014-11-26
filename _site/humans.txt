@@ -1,0 +1,10 @@
+/* People */
+Samantha Sheller, Danny Chapman - DucStudio.com
+
+/* Site */
+
+Last Update: 2014-05-23 12:35:30 -0400
+Generator: Jekyll
+Hosting: GitHub Pages
+Standards: HTML5, CSS3
+Components: HTML5 Resent, Responsive Grid System, Modernizr, jQuery

@@ -1,0 +1,14 @@
+---
+layout: none
+---
+
+/* People */
+Matthew Weaver, Marina Martin, Danny Chapman, Emily Tavoulareas
+
+/* Site */
+
+Last Update: {{ site.time }}
+Generator: Jekyll
+Hosting: GitHub Pages
+Standards: HTML5, CSS3
+Components: HTML5 Resent, Foundation, Modernizr, jQuery

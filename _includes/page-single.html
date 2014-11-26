@@ -1,0 +1,47 @@
+
+<div id="blog">
+<div id="content">
+<div class="container">
+
+<div class="row">
+<div class="small-12 large-7 large-centered columns">
+
+
+<article class="post{{ page.id | replace:"/","-" }}" class="post post{{ page.id | replace:"/","-" }}" role="main">
+
+<h2 class="title"><a href="{{ site.url}}{{ page.url }}">{{ page.title }}</a></h2>
+<p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+
+<div class="entrybody">
+
+{{ page.content | markdownify }}
+
+</div><!-- .entrybody -->
+
+<div class="post-meta">
+<span class="entry-date">{{ page.date | date: '%B %d, %Y' }}</span>
+<span class="entry-author">by {{ page.author }}</span>
+</div>
+
+
+</article>
+
+<div class="previous">
+
+<!-- Previous Posts -->
+
+<ul class="posts">
+{% for post in site.posts %}
+    {% if post.categories contains 'past' %}
+        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date_to_string }}</span></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
