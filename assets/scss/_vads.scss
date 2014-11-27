@@ -1,0 +1,157 @@
+/*** VA DS SCSS ***/
+
+/*** Colors ***/
+$vads-primary-color: #9dd348;
+$vads-secondary-color: #F0F885;
+$vads-body-content-color: #6d6e71;
+$vads-body-accent-color: #eee;
+$vads-body-background-color: #fff;
+
+/*** General ***/
+html, body {
+  font-family: 'Lato', sans-serif; font-weight: 300; color: $vads-body-content-color;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#wrap {
+  padding-top: 1em;
+}
+
+body.default.post #wrap {
+  @media #{$small} { padding-top: 9.5em;}
+}
+
+ol, ul {margin: 1em 0 1em 1.2em;}
+dl {margin-bottom: 2em;}
+dd {margin: 0; padding: 0; line-height: 1em; span {color: $vads-primary-color;}}
+
+#content { padding: 0; margin: 0; color: $vads-body-content-color;}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: $vads-body-content-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {font-family: 'Open Sans', sans-serif; font-weight: 300; color: $vads-body-content-color;}
+
+h2 {
+  @media #{$small} {font-size: em-calc(36);}
+  margin: 0 0 .75em 0;
+  text-align: center;
+  color: $vads-primary-color;
+  font-weight: 300;
+  em {font-style: normal; font-weight: 500;  }
+}
+
+h3 {font-weight: bold; font-weight: 500; font-size: em-calc(18); margin: 0; }
+h4 {font-weight: 500; font-size: em-calc(26); color: $vads-body-content-color; line-height: 1.2em; margin-bottom: 0; padding-bottom: 0;}
+h5 {font-weight: 500; margin: .35em 0 1em 0; padding: 0; font-weight: 300; font-size: 1em;}
+
+/*** Logo / header ***/
+
+.header {
+  @media #{$small} {
+  position: fixed;
+  top: 0;
+  padding: 0;
+  background: #fff;
+  background: rgba(255,255,255, .95);
+  z-index: 500;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  }
+}
+
+.header {
+  h1 {margin: 0; padding: 0;}
+}
+
+h1 a {
+  text-indent: -9999em;
+  white-space: nowrap;
+
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto 0 auto;
+  background: url(../../images/design/logo.png) center no-repeat;
+  width: 60%;
+  height: 55px;
+  background-size: contain;
+  &:hover {opacity: .9;}
+  @media #{$small} {
+    width: 70%;
+    height: 88px;
+  }
+}
+
+.header.skinny {
+  margin: 0; padding: 0;
+  h1 {margin: 0; padding: 0; height: auto;}
+  h1 a {height: 30px; width: 30px; background: url(../../images/design/icons/apple-icon-touch-114-precomposed.png) center no-repeat; background-size: cover;}
+  nav {
+    margin-top: 0;
+    padding: 0;
+    ul {padding: 0; margin: 0;}
+    margin-bottom: .25em;
+    li {margin: 0; padding: 0;}
+    ul li a {padding: .25em 2.5em; font-size: .8em; &:hover {background: #eee; background: rgba(0,0,0,.05);}}
+  }
+}
+
+
+/*** Nav ***/
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .9em;
+  margin-bottom: 1em;
+  ul li {
+    display: inline-block;
+    width: 40%;
+    font-size: .7em;
+    @media #{$small} {width: auto; font-size: 1em;}
+    letter-spacing: 0.08em;
+    a {display: block; padding: .5em 3em;}
+  }
+}
+
+/*** Banner ***/
+
+#banner,
+#secondary-pitch,
+#recent-work,
+#testimonial,
+#about,
+#get-in-touch,
+#services {
+  padding: 2em 0;
+  @media #{$small} {padding: 6em 0 2em 0;}
+
+}
+
+.navigation {
+
+  @media #{$small} {display: block;}
+}
+
+#banner {
+  background: url(../../images/design/tulips.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 2.5em 0;
+  color: #fff;
+  text-align: center;
+  h2, p {color: #fff;}
+  h2 {
+    padding: .5em 0; margin: 0;
+    @media #{$small} {margin: 2.5em 0;}
+    }
+}

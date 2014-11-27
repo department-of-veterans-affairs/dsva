@@ -1,1 +1,3 @@
-Personal site of Raph Majma. All opinions are my own.
+The official site of the Veterans Affairs Digital Service.
+
+Built using Jekyll, Foundation and GitHub pages.

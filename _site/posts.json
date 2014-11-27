@@ -1,6 +1,6 @@
 {
-	"name":"Dynamic Consulting",
-	"description":"Life Coach",
+	"name":"VA Digital Service",
+	"description":"Redefining the way VA serves veterans",
 	"url":"http://localhost:4000",
 	"updated":"",
 	"posts":[
@@ -9,10 +9,10 @@
 		"id":"/2014/05/14/test-post",
 		"url":"http://localhost:4000/2014/05/14/test-post/",
 		"description":"",
-		"tags": "Open Data",
+		"tags": "VDS",
 		"categories":"current",
 		"date": "2014-05-14 00:00:00 -0400",
-		"content": "<h3>Danny Chapman is good</h3><p>Thanks, Danny!</p><p>This is a test. Me thanking Danny does not represent the views of this site.Any and all opinions made by Danny are his and his alone. Also, cool off on theBanana Republic. There are other stores, you know. </p>"
+		"content": "<h3>Title</h3><p>Content here</p>"
 	}
 	]
 }
