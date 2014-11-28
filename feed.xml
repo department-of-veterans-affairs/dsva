@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 permalink: /feed/
 ---
 <?xml version="1.0"?>
@@ -22,5 +22,5 @@ permalink: /feed/
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
-  </channel> 
+  </channel>
 </rss>

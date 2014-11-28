@@ -1,15 +1,15 @@
 /*** VA DS SCSS ***/
 
 /*** Colors ***/
-$vads-primary-color: #9dd348;
-$vads-secondary-color: #F0F885;
+$vads-primary-color: #001B4E;
+$vads-secondary-color: #555;
 $vads-body-content-color: #6d6e71;
 $vads-body-accent-color: #eee;
 $vads-body-background-color: #fff;
 
 /*** General ***/
 html, body {
-  font-family: 'Lato', sans-serif; font-weight: 300; color: $vads-body-content-color;
+  font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; color: $vads-body-content-color;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -22,8 +22,10 @@ html, body {
 }
 
 body.default.post #wrap {
-  @media #{$small} { padding-top: 9.5em;}
+  @media #{$small} { padding-top: 5.5em;}
 }
+
+#blog {padding: 7.5em 0 2em 0;}
 
 ol, ul {margin: 1em 0 1em 1.2em;}
 dl {margin-bottom: 2em;}
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {font-family: 'Open Sans', sans-serif;
 h2 {
   @media #{$small} {font-size: em-calc(36);}
   margin: 0 0 .75em 0;
-  text-align: center;
+  text-align: left;
   color: $vads-primary-color;
   font-weight: 300;
   em {font-style: normal; font-weight: 500;  }
@@ -63,32 +65,31 @@ h5 {font-weight: 500; margin: .35em 0 1em 0; padding: 0; font-weight: 300; font-
   top: 0;
   padding: 0;
   background: #fff;
-  background: rgba(255,255,255, .95);
+  background: rgba(255,255,255, .92);
   z-index: 500;
   width: 100%;
-  -webkit-box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  border-bottom: 2px solid rgba(0,0,0,.05);
   }
 }
 
 .header {
-  h1 {margin: 0; padding: 0;}
+  h1 {margin: 0; padding: 0; text-align: left;}
 }
 
 h1 a {
   text-indent: -9999em;
   white-space: nowrap;
 
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   display: block;
   margin: 0 auto 0 auto;
-  background: url(../../images/design/logo.png) center no-repeat;
+  background: url(../img/design/logo.png) center left no-repeat;
   width: 60%;
   height: 55px;
   background-size: contain;
   &:hover {opacity: .9;}
   @media #{$small} {
-    width: 70%;
     height: 88px;
   }
 }
@@ -112,46 +113,83 @@ h1 a {
 nav {
   text-transform: uppercase;
   text-align: center;
+  @media #{$small} {text-align: right;}
   font-size: .9em;
-  margin-bottom: 1em;
+  margin: 2em 0 1em 0;
   ul li {
     display: inline-block;
-    width: 40%;
-    font-size: .7em;
     @media #{$small} {width: auto; font-size: 1em;}
     letter-spacing: 0.08em;
     a {display: block; padding: .5em 3em;}
   }
 }
 
-/*** Banner ***/
+ul.posts {
+  margin: 0;
+  padding: 0;
+  li {
+  list-style-type: none;
+  border-bottom: 1px solid #eee;
+    a {
+      display: block;
+      padding: 1em 0;
 
-#banner,
-#secondary-pitch,
-#recent-work,
-#testimonial,
-#about,
-#get-in-touch,
-#services {
-  padding: 2em 0;
-  @media #{$small} {padding: 6em 0 2em 0;}
-
+      &:hover {background: #eee; border-bottom: $vads-primary-color;}
+    }
+  }
 }
 
-.navigation {
-
-  @media #{$small} {display: block;}
+footer {
+  background: rgba(0,0,0,.05);
+  padding: 3em 0;
+  h4 {font-size: 1.1em;}
+  ul.posts {
+    margin: 0 0 2em 0;
+  }
+  img {margin: 0 0 1em 0;}
 }
+
+/*** Sections ***/
+
+#who-we-are, #friends-and-partners, #call-to-action {
+  padding: 3em 0;
+}
+
+
+#friends-and-partners {
+  background: #eee;
+}
+
+#call-to-action {
+  background: $vads-primary-color;
+  color: #fff;
+  h2, h3, h4, p, a {color: #fff;}
+  .button {border-top: none; background: #fff; color: $vads-primary-color;}
+}
+
+
 
 #banner {
-  background: url(../../images/design/tulips.jpg) center center no-repeat;
+  background: url(../img/design/banner.jpg) top center no-repeat fixed;
   background-size: cover;
-  padding: 2.5em 0;
   color: #fff;
-  text-align: center;
+  padding: 14em 0 3em 0;
+  height: 550px;
+  text-align: right;
   h2, p {color: #fff;}
   h2 {
-    padding: .5em 0; margin: 0;
-    @media #{$small} {margin: 2.5em 0;}
+    padding: .25em; margin: 0;
+    background: rgba(0,0,0,.75);
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    @media #{$small} {margin: 1.5em 0;}
     }
+}
+
+.button {
+  border: none;
+  padding: 1em;
+  background: $vads-primary-color;
+  &:hover, &:active {background: lighten($vads-primary-color,10%);}
 }

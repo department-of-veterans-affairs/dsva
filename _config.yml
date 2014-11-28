@@ -31,5 +31,5 @@ safe: true
 
 
 sass:
-    sass_dir: css
+    sass_dir: assets/scss
     style: :compressed
