@@ -24,7 +24,7 @@
 <meta name="application-name" content="VADS">
 
 
-<!-- Feeds and Text -->
+<!-- Feeds -->
 <link type="text/plain" rel="author" href="{{ site.url }}/humans.txt" />
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} RSS Feed" href="{{ site.url }}/feed/">
 
@@ -35,10 +35,32 @@
 <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/images/design/icons/apple-icon-touch-114-precomposed.png">
 <link rel="apple-touch-icon" sizes="157x157" href="{{ site.url }}/images/design/icons/apple-icon-touch-157-precomposed.png">
 
-
-<!-- Javascript -->
+<!-- JS -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
 <script src="{{ site.url }}/assets/js/vendor/jquery.js"></script>
+
+<script src="{{ site.url }}/assets/js/vendor/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+$(function() {
+  //caches a jQuery object containing the header element
+  var header = $(".header");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+      header.removeClass('normal').addClass("skinny");
+    } else {
+      header.removeClass("skinny").addClass('normal');
+    }
+  });
+});
+
+</script>
+
 
 <!-- Type -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -55,13 +77,32 @@
 
 <div class="header normal">
 <div class="row">
-<div class="small-12 small-centered large-uncentered large-5 columns">
+<div class="small-8 large-uncentered large-5 columns">
 <h1 role="banner"><a href="{{ site.url }}"><abbr title="Veterans Affairs">VA</abbr> Digital Service</a></h1>
 </div>
 
-<div class="small-12 small-centered large-uncentered large-7 columns">
-  <nav>
+<div class="small-3 small-offset-1 show-for-small text-right columns">
+<button id="trigger-overlay" class="show-for-small-only" type="button" role="button">Menu</button>
+</div>
+
+<div class="small-7 large-uncentered hide-for-small columns">
+<nav>
+  <ul>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/posts/">Blog</a></li>
+  </ul>
+</nav>
+</div>
+
+
+
+<div class="overlay overlay-contentpush" aria-hidden="true">
+  <button type="button" class="overlay-close">Close</button>
+  <nav class="mobile">
     <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
       <li><a href="/posts/">Blog</a></li>
     </ul>
   </nav>

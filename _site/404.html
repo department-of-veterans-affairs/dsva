@@ -24,7 +24,7 @@
 <meta name="application-name" content="VADS">
 
 
-<!-- Feeds and Text -->
+<!-- Feeds -->
 <link type="text/plain" rel="author" href="http://localhost:4000/humans.txt" />
 <link rel="alternate" type="application/rss+xml" title="VA Digital Service RSS Feed" href="http://localhost:4000/feed/">
 
@@ -35,10 +35,32 @@
 <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/design/icons/apple-icon-touch-114-precomposed.png">
 <link rel="apple-touch-icon" sizes="157x157" href="http://localhost:4000/images/design/icons/apple-icon-touch-157-precomposed.png">
 
-
-<!-- Javascript -->
+<!-- JS -->
 <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
 <script src="http://localhost:4000/assets/js/vendor/jquery.js"></script>
+
+<script src="http://localhost:4000/assets/js/vendor/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+$(function() {
+  //caches a jQuery object containing the header element
+  var header = $(".header");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+      header.removeClass('normal').addClass("skinny");
+    } else {
+      header.removeClass("skinny").addClass('normal');
+    }
+  });
+});
+
+</script>
+
 
 <!-- Type -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -55,13 +77,32 @@
 
 <div class="header normal">
 <div class="row">
-<div class="small-12 small-centered large-uncentered large-5 columns">
+<div class="small-8 large-uncentered large-5 columns">
 <h1 role="banner"><a href="http://localhost:4000"><abbr title="Veterans Affairs">VA</abbr> Digital Service</a></h1>
 </div>
 
-<div class="small-12 small-centered large-uncentered large-7 columns">
-  <nav>
+<div class="small-3 small-offset-1 show-for-small text-right columns">
+<button id="trigger-overlay" class="show-for-small-only" type="button" role="button">Menu</button>
+</div>
+
+<div class="small-7 large-uncentered hide-for-small columns">
+<nav>
+  <ul>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/posts/">Blog</a></li>
+  </ul>
+</nav>
+</div>
+
+
+
+<div class="overlay overlay-contentpush" aria-hidden="true">
+  <button type="button" class="overlay-close">Close</button>
+  <nav class="mobile">
     <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
       <li><a href="/posts/">Blog</a></li>
     </ul>
   </nav>
@@ -85,48 +126,41 @@
 
 <footer role="footer">
 
-  <div class="row">
-    <div class="small-12 large-4 columns">
-        <h4>Recent posts</h4>
-          <ul class="posts">
-          
-          <li>
-            <a href="/2014/05/14/test-post/">
-              <span class="date">14 May 2014</span>
+<div class="row">
+<div class="wow fadeInDown">
+<div class="small-12 large-4 columns">
+<h4>Recent posts</h4>
+<ul class="posts">
 
-              Test</a>
-            </li>
-            
-          </ul>
-    </div>
+<li>
+<a href="/2014/05/14/test-post/">
+<span class="date">14 May 2014</span>
 
-    <div class="small-12 large-4 columns">
-      <img src="http://placehold.it/350x150">
-    </div>
+Test</a>
+</li>
 
-    <div class="small-12 large-4 columns">
-      <img src="http://placehold.it/350x150">
-    </div>
+</ul>
+</div>
 
-  </div>
+<div class="small-12 large-4 columns">
+<img src="http://placehold.it/350x150">
+</div>
+
+<div class="small-12 large-4 columns">
+<img src="http://placehold.it/350x150">
+</div>
+</div>
+</div>
 
 </footer>
-
-
 
 <!-- Google Analytics -->
 
 
-<!-- Foundation -->
-
-  <script src="/assets/js/foundation/foundation.js"></script>
-  <script src="/assets/js/foundation/foundation.equalizer.js"></script>
-  <!-- Other JS plugins can be included here -->
-
-  <script>
-    $(document).foundation();
-  </script>
-
+<!-- Other JS-->
+<script src="/assets/js/vendor/index.js"></script>
+<script src="/assets/js/vendor/classie.js"></script>
+<script src="/assets/js/vendor/demo7.js"></script>
 
 
 </body>
