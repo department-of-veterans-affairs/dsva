@@ -1,37 +1,17 @@
-
-
 <footer role="footer">
 
-<div class="row">
-<div class="wow fadeInDown">
-<div class="small-12 large-4 columns">
-<h4>Recent posts</h4>
-<ul class="posts">
-{% for post in site.posts limit:3 %}
-<li>
-<a href="{{ BASE_PATH }}{{ post.url }}">
-<span class="date">{{ post.date | date_to_string }}</span>
+  <div class="row">
+    <div class="wow fadeInDown" data-wow-delay=".4s">
 
-{{ post.title }}</a>
-</li>
-{% endfor %}
-</ul>
-</div>
+      <div class="small-1 small-offset-1 columns text-right">
+        <img src="/assets/img/design/va-logo.png" alt="Department of Veterans Affairs">
+      </div>
 
-<div class="small-12 large-4 columns">
-<img src="http://placehold.it/350x150">
-</div>
 
-<div class="small-12 large-4 columns">
-<img src="http://placehold.it/350x150">
-</div>
-</div>
-</div>
+    </div>
+  </div>
 
 </footer>
-
-<!-- Google Analytics -->
-
 
 <!-- Other JS-->
 <script src="/assets/js/vendor/index.js"></script>

@@ -10,11 +10,11 @@ $vads-body-background-color: #fff;
 /*** General ***/
 html, body {
   font-family: 'Open Sans', Arial, sans-serif; font-weight: 300; color: $vads-body-content-color;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 abbr {
@@ -30,7 +30,7 @@ abbr {
 }
 
 body.default.post #wrap {
-  @media #{$small} { padding-top: 4.2em;}
+  @media #{$small} { padding-top: 3.8em;}
 }
 
 #blog {padding: 7.5em 0 2em 0;}
@@ -188,10 +188,50 @@ footer {
 }
 
 #call-to-action {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: $vads-primary-color;
+  &:hover {
+    background: darken($vads-primary-color, 4);
+    .button {
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+  }
   color: #fff;
+
   h2, h3, h4, p, a {color: #fff;}
-  .button {border-top: none; background: #fff; color: $vads-primary-color;}
+  ul {
+    color: #fff;
+    margin: 0 0 2em 0;
+    li {list-style-type: square; padding: .5em 0;}
+  }
+  .button {
+    border-top: none;
+    background: #29AD8D;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-top: none;
+    padding: .75em 2em;
+    box-shadow: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    &:hover, &:active, &:focus {background: darken(#4AC49E, 10); text-shadow: 0 0 12px rgba(255,255,255,.5);}
+  }
 }
 
 
@@ -204,10 +244,13 @@ footer {
   abbr {text-decoration: none; color: inherit; border-bottom: none; font-weight: inherit;}
   h2, p {color: #fff;}
   h2 {
-    padding: .25em; margin: 0;
-    background: rgba(0,0,0,.75);
+   margin: 0;
+    font-size: 2em;
     display: inline-block;
-    width: 40%;
+    span {background: rgba(0,0,0,.75); padding: .1em; display: inline-block; padding: .25em;}
+
+
+    width: 45%;
     text-align: right;
     margin: 1.5em 0;
     }
