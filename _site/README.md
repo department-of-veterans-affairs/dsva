@@ -1,3 +1,9 @@
-The official site of the Veterans Affairs Digital Service.
+The official site of Digital Service @ VA.
 
-Built using Jekyll, Foundation and GitHub pages.
+Built using
+
+-Jekyll
+-Foundation
+-GitHub pages
+-wow.js
+-animate.css
