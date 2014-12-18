@@ -7,7 +7,7 @@ name: VA Digital Service
 description: Redefining the way VA serves veterans
 
 #URL of site, include http://, do not include a trailing slash
-url: http://department-of-veterans-affairs.github.io/DSVA
+url: http://department-of-veterans-affairs.github.io/dsva
 
 #files to exclude, array
 exclude: [ 'readme.md', 'php' ]
