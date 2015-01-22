@@ -1,13 +1,13 @@
 {
 	"name":"VA Digital Service",
 	"description":"Redefining the way VA serves veterans",
-	"url":"http://localhost:4000",
+	"url":"http://department-of-veterans-affairs.github.io/dsva",
 	"updated":"",
 	"posts":[
 	{
 		"title":"Test",
 		"id":"/2014/05/14/test-post",
-		"url":"http://localhost:4000/2014/05/14/test-post/",
+		"url":"http://department-of-veterans-affairs.github.io/dsva/2014/05/14/test-post/",
 		"description":"",
 		"tags": "VDS",
 		"categories":"current",
