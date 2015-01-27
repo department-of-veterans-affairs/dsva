@@ -29,10 +29,6 @@ permalink: /:year/:month/:day/:title/
 production: true
 markdown: redcarpet
 
-#local build config
-pygments: true
-safe: true
-
 
 sass:
     sass_dir: assets/scss

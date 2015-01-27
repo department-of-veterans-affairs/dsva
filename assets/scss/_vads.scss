@@ -246,11 +246,49 @@ footer {
   height: 13em;
   padding: 2em 0 1em 0;
   @media #{$small} {
-    background: url(../img/design/banner.jpg) center center no-repeat;
+    background: url(../img/design/banner.jpg) center center no-repeat fixed;
     background-size: cover;
     height: 24em;
   }
 }
+
+
+.banner-image.blur {
+  background: url(../img/design/banner-blur.jpg) top center no-repeat fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 24em;
+}
+
+
+// Banner blur effect
+
+.blurImg {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.blurImg > div {
+  position: fixed;
+  width: 100%;
+  height: 440px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.blur {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
 
 .button {
   border: none;

@@ -3,7 +3,7 @@ Matthew Weaver, Marina Martin, Danny Chapman, Emily Tavoulareas
 
 /* Site */
 
-Last Update: 2015-01-27 15:50:00 -0500
+Last Update: 2015-01-27 16:14:02 -0500
 Generator: Jekyll
 Hosting: GitHub Pages
 Standards: HTML5, CSS3
