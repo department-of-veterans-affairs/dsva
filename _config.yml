@@ -30,7 +30,7 @@ production: true
 markdown: redcarpet
 
 #local build config
-highlighter: true
+pygments: true
 safe: true
 
 
