@@ -2,71 +2,71 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    
   <url>
-    <loc>http://localhost:4000/</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/404.html</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/404.html</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/categories/</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/categories/</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/feed/</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/feed/</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/humans.txt</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/humans.txt</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/posts/</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/posts/</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/posts.json</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/posts.json</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/sitemap.xml</loc>
-    <lastmod>2015-01-22T14:04:08-05:00</lastmod>
+    <loc>http://127.0.0.1:4000/sitemap.xml</loc>
+    <lastmod>2015-01-27T15:50:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   
   <url>
-    <loc>http://localhost:4000/2014/05/14/test-post/</loc>
+    <loc>http://127.0.0.1:4000/2014/05/14/test-post/</loc>
     <lastmod>2014-05-14T00:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

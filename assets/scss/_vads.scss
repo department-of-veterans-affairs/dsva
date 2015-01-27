@@ -225,6 +225,7 @@ footer {
 #banner {
   color: #fff;
   text-align: right;
+  position: relative;
   abbr {text-decoration: none; color: inherit; border-bottom: none; font-weight: inherit;}
   h2, p {color: #fff;}
   h2 {
@@ -232,8 +233,6 @@ footer {
     font-size: 2em;
     display: inline-block;
     span {background: rgba(0,0,0,.75); padding: .1em; display: inline-block; padding: .25em;}
-
-
     width: 45%;
     text-align: right;
     margin: 1.5em 0;
@@ -247,9 +246,9 @@ footer {
   height: 13em;
   padding: 2em 0 1em 0;
   @media #{$small} {
-    background: url(../img/design/banner.jpg) 80% 100% no-repeat fixed;
+    background: url(../img/design/banner.jpg) center center no-repeat;
     background-size: cover;
-    height: 27em;
+    height: 24em;
   }
 }
 
