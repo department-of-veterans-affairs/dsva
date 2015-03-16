@@ -162,15 +162,18 @@ footer {
 
 /*** Sections ***/
 
-#who-we-are, #friends-and-partners, #call-to-action {
+#who-we-are,
+#credo,
+#call-to-action {
   padding: 3em 0;
   clear: both;
   z-index: 100;
 }
 
 
-#friends-and-partners {
+#credo {
   background: #eee;
+  padding-bottom: 3em;
 }
 
 #call-to-action {
