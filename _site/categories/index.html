@@ -17,7 +17,7 @@
   <meta content='http://127.0.0.1:4000' property='og:url'>
   <meta content='http://127.0.0.1:4000/assets/img/design/icons/apple-touch-icon-72x72.png' property='og:image'>
   <meta content='VA Digital Service' property='og:title'>
-  <meta content='Redefining the way VA servce veterans' property='og:description'>
+  <meta content='Redefining the way VA serves veterans' property='og:description'>
   <meta name="apple-mobile-web-app-title" content="VADS">
   <meta name="application-name" content="VADS">
 
@@ -38,22 +38,6 @@
   new WOW().init();
   </script>
 
-  <script>
-  $(function() {
-    //caches a jQuery object containing the header element
-    var header = $(".header");
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-
-      if (scroll >= 500) {
-        header.removeClass('normal').addClass("skinny");
-      } else {
-        header.removeClass("skinny").addClass('normal');
-      }
-    });
-  });
-  </script>
-
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='http://127.0.0.1:4000/assets/css/foundation.css'>
 
@@ -64,10 +48,18 @@
     <div id="wrap">
       <div class="header normal">
         <div class="row">
-          <div class="small-6 large-10 large-centered columns">
+          <div class="small-11 large-10 small-centered columns">
             <h1 role="banner"><a href="/">Digital Service at the <abbr title="Department of Veterans Affairs">VA</abbr></a></h1>
 
           </div>
+        </div>
+        <div class="row">
+          <div class="small-11 large-7 small-centered columns">
+          <div class="who-we-are">
+            <p>We are a team of seasoned engineers, designers, and product managers from some of the best-known companies in the private sector. We are joining forces with talented VA employees to make using VA services as simple as buying a book online.</p>
+          </div>
+        </div>
+
         </div>
       </div><!--/header -->
 
@@ -95,9 +87,6 @@
 
 </footer>
 
-<!-- Other JS-->
-<script src="http://127.0.0.1:4000/assets/js/vendor/index.js"></script>
-<script src="http://127.0.0.1:4000/assets/js/vendor/classie.js"></script>
 
 </body>
 </html>
