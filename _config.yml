@@ -8,8 +8,8 @@ description: Redefining the way VA serves veterans
 
 #URL of site, include http://, do not include a trailing slash
 # http://localhost
-url: http://127.0.0.1:4000
-# url: http://department-of-veterans-affairs.github.io/dsva
+# url: http://127.0.0.1:4000
+url: http://department-of-veterans-affairs.github.io/dsva
 
 
 
