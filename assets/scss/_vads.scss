@@ -76,9 +76,9 @@ h5 {font-weight: 500; margin: .35em 0 1em 0; padding: 0; font-weight: 300; font-
 /*** Logo / header ***/
 
 .header {
-  @media #{$small} {
   background: #fff;
   z-index: 100;
+  @media #{$small} {
   padding: 2em 0;
   width: 100%;
   border-bottom: 2px solid rgba(0,0,0,.05);
